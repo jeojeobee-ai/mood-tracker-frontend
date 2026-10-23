@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-const API = 'http://localhost:4000/moods';
+const API = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000') + '/moods';
 const FACES = ['😭', '😕', '😐', '🙂', '😄'];
 const STICKERS = ['⭐', '🎉', '❤️', '☕', '🌧️', '💪', '😴', '🍰'];
 const DAYS = ['일', '월', '화', '수', '목', '금', '토'];
